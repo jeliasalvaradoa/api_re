@@ -8,10 +8,7 @@ app.disable('x-powered-by');
 app.use(express.json());
 
 const ACCEPTED_ORIGINS = [
-  'http://localhost:80',
-  'http://localhost:3000',
-  'http://127.0.0.1:5500',
-  'http://localhost:1234',
+  '*'
 ];
 
 app.get('/:cedId', async (req, res) => {
